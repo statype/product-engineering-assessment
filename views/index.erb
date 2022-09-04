@@ -1,6 +1,25 @@
 <html>
-  <head></head>
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  </head>
   <body>
-    <h1>Hello World</h1>
+    <h1>Dashboard</h1>
+    <div class="graphs">
+      <%
+        series = [
+        {name: "Daily Activity", data: @daily_activity },
+        {name: "Trajectory", data: @increasing}
+        ]
+        options = {
+          title: 'Weekly Activity',
+          subtitle: '40 week values',
+          xtitle: 'Week',
+          ytitle: 'Activities',
+          stacked: true
+        }
+      %>
+
+      <%= line_chart(series, options) %>
+    </div>
   </body>
 </html>
