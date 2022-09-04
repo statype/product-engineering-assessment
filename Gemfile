@@ -18,4 +18,6 @@ gem 'faker', '~> 2.23'
 group :development, :test do
   gem "standard", "~> 1.16"
   gem "pry", "~> 0.14.1"
+  gem 'better_errors', '~> 2.9', '>= 2.9.1'
+  gem 'binding_of_caller', '~> 1.0'
 end
