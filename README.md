@@ -14,7 +14,7 @@ https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one
 - [Overview](#overview)
 - [The Assignments](#the-assignments)
   - [Add new stuff](#add-new-stuff)
-  - [Talk about stuff and doing it](#talk-about-stuff-and-doing-it)
+  - [More than just the code](#more-than-just-the-code)
 - [Getting Started](#getting-started)
   - [Get the assignment](#get-the-assignment)
   - [Setting up your computer](#setting-up-your-computer)
@@ -24,14 +24,21 @@ https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one
 
 ### Add new stuff
 
-Choose one of thse following assignments
+Choose one of the following assignments:
 
 #### Add a new page
 
 ##### "Stack ALL the Things"
 
-Add a new route to the application which houses a stacked line graph that is
-basically cohort graphs like everywhere else.
+Add a new route to the application which houses a "revenue data".  The new route
+should render a view that includes a stacked line graph representing the
+(hopefully) increasing over time revenue per "Cohort".  A "Cohort" is a group of
+customers who joined in the same period - depending on the age/maturity of the
+company cohorts could be months or years.  Be sure to generate "realistic" data
+that is displayed and some randomness for realism is welcome.
+
+For inspiration below is a _very_ early mockup of such a graph:
+<img src="docs/artifacts/cohort_revenue.png" alt="A graph starting in Fiscal Year 2015 and progressing through 2019.  For each year a layer is added to the group from left to right showing the additional revenue the new cohort adds to the company." width="800px" height="559px">
 
 #### Add a new graph type (_Difficult_)
 
@@ -46,7 +53,9 @@ the `line_chart(...)` helper is provided by the Rubygem as seen in
 `views/index.erb`.  The functionality you add should still call the ApexCharts
 Treemap Javascript implementation as if the Ruby library had provided it.
 
-### Talk about stuff and doing it
+### More than just the code
+
+Choose one of the following and complete the assignment(s) within:
 
 #### Testing
 
@@ -68,6 +77,34 @@ photographic evidence of the coin-flip.
 
 Describe any compromises you had to make in the process.  What improvements may
 this change have introduced regardless of your initial preferences.
+
+#### Developer Experience and Tooling
+
+Part 1: Describe, defend, and critique your favorite developer tool used during
+the process of building a web application inless that 200 words per section.
+
+_Example:_
+
+> My favorite tool to use while building [Web Apps, SPAs, APIs] is [tool] because ... (176 words)
+>
+> In particular [tool] enables me to [things it enables] ... (192 words)
+>
+> While [tool] is great one drawback is that it [isn't super great in some context] ... (181 words)
+
+Part 2a: Add your favorite tool to the devcontainer packaged here and show what
+it enables.
+
+_or_
+
+Part 2b: [`rubocop`](https://github.com/rubocop/rubocop) is a best-practices
+linter for Ruby (which supports Rails as well).  Its mission is to standardize
+the style of Ruby written so that code-review can be focussed on the important
+contents of changes and not nit-picky around style things.  We like standards.
+[`standardrb`](https://github.com/testdouble/standard) is effectively a "better"
+set of rules for Rubocop.  Both are installed in your container and can be run
+via `bundle exec rubocop` and `bundle exec standardrb` respectively.  Without
+running them in autofix-mode run them, compare the outputs, and make a
+recommendation on either running the suggested fixes or not doing so.
 
 ## Getting Started
 
@@ -104,7 +141,7 @@ project in a container which has Ruby pre-configured and libraries installed via
 
 Once the devcontainer is running you can start the application via
 `bundle exec ruby grapher.rb` which will connect the application to
-your [localhost:4567]()
+your [localhost:4567](localhost:4567)
 
 You can run all of the tests via `rake` or  `rake all` or the minitest tests via
 `rake test` and the RSpecs via `rake spec`.
