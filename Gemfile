@@ -20,4 +20,10 @@ group :development, :test do
   gem "pry", "~> 0.14.1"
   gem 'better_errors', '~> 2.9', '>= 2.9.1'
   gem 'binding_of_caller', '~> 1.0'
+
+  gem 'rake', '~> 13.0', '>= 13.0.6'
+end
+
+group :test do
+  gem 'minitest', '~> 5.8', '>= 5.8.4'
 end
