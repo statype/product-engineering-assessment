@@ -37,8 +37,10 @@
 			},
 			// Add the IDs of extensions you want installed when the container is created.
 			"extensions": [
+				"DavidAnson.vscode-markdownlint",
 				"rebornix.Ruby",
-				"streetsidesoftware.code-spell-checker"
+				"streetsidesoftware.code-spell-checker",
+				"yzhang.markdown-all-in-one"
 			]
 		}
 	},
