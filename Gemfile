@@ -12,6 +12,9 @@ gem 'thin', '~> 1.8', '>= 1.8.1'
 # Charting libraries
 gem "apexcharts", "~> 0.2"
 
+# Fake Data
+gem 'faker', '~> 2.23'
+
 group :development, :test do
   gem "standard", "~> 1.16"
   gem "pry", "~> 0.14.1"
