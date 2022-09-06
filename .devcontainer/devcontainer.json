@@ -30,6 +30,9 @@
 				"ruby.format": "standard",
 				"[ruby]": {
 					"editor.formatOnSave": true
+				},
+				"markdown.extension":{
+					"toc.levels": "2..3"
 				}
 			},
 			// Add the IDs of extensions you want installed when the container is created.
