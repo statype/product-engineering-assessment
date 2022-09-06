@@ -1,5 +1,4 @@
 require "minitest/test_task"
-
 Minitest::TestTask.create(:test) do |t|
   t.libs << "lib"
   t.warning = false
@@ -12,4 +11,6 @@ begin
 rescue LoadError
 end
 
-task default: :test
+task all: [:test, :spec]
+
+task default: :all
