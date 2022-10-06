@@ -53,7 +53,7 @@ Choose one of the following assignments:
 ##### "Stack ALL the Things"
 
 Add a new route to the application which houses a "revenue data".  The new route
-should render a view that includes a stacked line graph representing the
+should render a view that includes a stacked area graph representing the
 (hopefully) increasing over time revenue per "Cohort".  A "Cohort" is a group of
 customers who joined in the same period - depending on the age/maturity of the
 company cohorts could be months or years.  Be sure to generate "realistic" data
