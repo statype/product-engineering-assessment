@@ -16,7 +16,7 @@ gem "apexcharts", "~> 0.2"
 gem 'faker', '~> 3.0'
 
 group :development, :test do
-  gem "standard", "~> 1.19"
+  gem "standard", "~> 1.20"
   gem "pry", "~> 0.14.1"
   gem 'better_errors', '~> 2.9', '>= 2.9.1'
   gem 'binding_of_caller', '~> 1.0'
