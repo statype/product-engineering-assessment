@@ -25,6 +25,6 @@ group :development, :test do
 end
 
 group :test do
-  gem 'minitest', '~> 5.8', '>= 5.8.4'
+  gem 'minitest', '~> 5.17'
   gem 'rspec', '~> 3.12'
 end
