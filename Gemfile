@@ -13,7 +13,7 @@ gem 'thin', '~> 1.8', '>= 1.8.1'
 gem "apexcharts", "~> 0.2"
 
 # Fake Data
-gem 'faker', '~> 3.0'
+gem 'faker', '~> 3.1'
 
 group :development, :test do
   gem "standard", "~> 1.21"
